@@ -1,5 +1,13 @@
-import 'package:flutter/services.dart';
-import 'package:tarefa6/componentes/botao.dart';
+import 'package:flutter/material.dart';
+import 'package:tarefa6/view/view.dart';
+
+void main() {
+  runApp(MeuApp());
+}
+
+
+//Codigo antigo
+/*import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
@@ -108,7 +116,10 @@ class MeuAppState extends State<MeuApp> {
           ),
           /*,*/
           const SizedBox(height: 20),
-          Botao(txtBotao, calcNota),
+          ElevatedButton(
+            onPressed: calcNota,
+            child: Text(txtBotao),
+          ),
           Text(textfinal,
               style:
                   const TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
@@ -125,4 +136,4 @@ class MeuApp extends StatefulWidget {
   MeuAppState createState() {
     return MeuAppState();
   }
-}
+}*/
